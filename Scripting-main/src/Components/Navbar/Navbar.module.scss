@@ -1,0 +1,165 @@
+@import '../../styles/scripting.scss';
+.container_navbar
+{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0px 50px 0px 50px; 
+    background-color: $blanco ;
+    box-shadow: $shadow;
+    z-index: 15;
+
+    @include laptop{
+        padding: 0px 100px 0px 100px; 
+    }
+
+    .logo{
+        width: 80px;
+        height: 74px;
+    }
+    .links{
+        display: none;
+        margin-right: 0px;
+        margin-left: auto;
+        @include laptop{
+            display: block;
+        }
+        button{
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: auto;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            a{
+                margin-left: 57px;
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 23px;
+                color: $azul;
+                &.active{
+                    color: $rosa;
+                }
+                &:hover{
+                    color:$rosa;
+                }
+            }
+        }
+        
+    }
+    .burger{
+        margin-left: auto;
+        button{
+            margin: 0;
+            padding: 0;
+            height: auto;
+            width: auto;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            display: block;
+            @include laptop{
+                display: none;
+            }
+
+            .bar1
+            {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+                &.change{
+                    -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+                    transform: rotate(-45deg) translate(-7px, 6px);
+                }
+            }
+            .bar2{
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+                &.change{
+                    opacity: 0;
+                }
+            }
+            .bar3 {
+                width: 35px;
+                height: 5px;
+                background-color: #333;
+                margin: 6px 0;
+                transition: 0.4s;
+                &.change{
+                    -webkit-transform: rotate(45deg) translate(-10px, -8px);
+                    transform: rotate(45deg) translate(-10px, -8px);
+                }
+              }
+
+        }
+    }
+}
+
+.container_mobile{
+    background-color: $blanco;
+    margin-top: 75px;
+    width: 100%;
+    position:fixed;
+    height: 60%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    padding: 0px 50px 0px 50px; 
+    z-index: 15;
+    box-shadow: $shadow;
+    animation-name: example;
+    animation-duration: 0.5s;
+    overflow: hidden;
+    display: none;
+    &.open{
+        display: block;
+        @include laptop{
+            display: none;
+        }
+    }
+    @keyframes example {
+        from {height: 0;}
+        to {height: 60%;}
+      }
+
+    button{
+            margin: 30px 0px;
+            padding: 0;
+            height: auto;
+            width: auto;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            cursor: pointer;
+            display: block;
+            a{
+                font-family: 'Roboto';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 23px;
+                color: $azul;
+                &.active{
+                    color: $rosa;
+                }
+                &:hover{
+                    color:$rosa;
+                }
+            }
+
+    }
+}

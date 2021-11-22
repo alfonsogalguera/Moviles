@@ -1,0 +1,35 @@
+@import '../../styles/scripting.scss';
+
+.subtitulo{
+    padding-top: 90px;
+    height: 18px;
+    padding-bottom: 50px;
+    font-family: $roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    justify-content: center;
+    p{
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+        background-color: $blanco;
+        width: fit-content;
+        font-family: $MartelSans;
+        color: $azul;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 27px;
+        @include tablet{
+            font-size: 25px;
+        }
+    }
+    @include tablet{
+        margin-top: 115px;
+        //margin-left: 90px;
+        margin-bottom: 50px;
+    }
+}

@@ -1,0 +1,168 @@
+@import '../../styles/scripting.scss';
+
+.container_trabajamos{
+    display: flex;
+    flex-direction: column;
+    margin-right: 26px;
+    margin-left: 26px;
+    margin-bottom: -48px;
+
+    @include tablet{
+        margin-right: 97px;
+        margin-left: 97px;
+        margin-bottom: -60px;
+        align-items: center;
+    }
+    .container_text_izquierda{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-bottom: 48px;
+        @include tablet{
+            margin-bottom: 60px;  
+        }
+        .container_text{
+            width: 165px;
+            height: 150px;
+            overflow: hidden;
+            @include tablet{
+                width: 50%;
+                height: 200px;
+            }
+            h3{
+                padding: 0;
+                margin: 0;
+                height: 30px;
+                width: 100%;
+                font-family: $MartelSans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                color: $rosa;
+                &.azul{
+                    border-bottom: 2px solid $azul;
+                }
+                &.rosa {
+                    border-bottom: 2px solid $rosa;
+                }
+                @include tablet{
+                    font-size: 25px;
+                    height: 40px;
+                }
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                padding-top: 7px;
+                color: $gris;
+                font-family: $MartelSans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 16px;
+                @include tablet{
+                    font-size: 17px;
+                    line-height: 20px;
+                    max-width: 500px;
+                }
+            }
+        }
+
+        .container_img{
+            width: 145px;
+            height: 139px;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            overflow: hidden;
+            @include tablet{
+                width: 50%;
+                height: 200px;
+            }
+            img{
+                height:125px;
+                @include tablet{
+                    height: 200px;
+                }
+            }
+        }
+    }
+    .container_text_derecha{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        margin-bottom: 48px;
+        @include tablet{
+            margin-bottom: 60px;  
+        }
+        .container_text{
+            width: 145px;
+            height: 150px;
+            overflow: hidden;
+            text-align: end;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            @include tablet{
+                width: 50%;
+                height: 200px;
+            }
+            h3{
+                padding: 0;
+                margin: 0;
+                height: 30px;
+                width: 100%;
+                font-family: $MartelSans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 20px;
+                color: $azul;
+                &.azul{
+                    border-bottom: 2px solid $azul;
+                }
+                &.rosa {
+                    border-bottom: 2px solid $rosa;
+                }
+                @include tablet{
+                    font-size: 25px;
+                    height: 40px;
+                }
+            }
+            p{
+                margin: 0;
+                padding: 0;
+                padding-top: 7px;
+                color: $gris;
+                font-family: $MartelSans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 11px;
+                line-height: 16px;
+                @include tablet{
+                    font-size: 17px;
+                    line-height: 20px;
+                    max-width: 500px;
+                }
+            }
+        }
+
+        .container_img{
+            width: 165px;
+            height: 139px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            @include tablet{
+                width: 50%;
+                height: 200px;
+            }
+            img{
+                height:125px;
+                @include tablet{
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

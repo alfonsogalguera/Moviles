@@ -1,0 +1,135 @@
+@import '../../styles/scripting.scss';
+
+.container_none{
+    display: none;
+}
+.container_notification{
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    margin-left: -150px ;
+    left: 50%;
+    margin-bottom: 20px;
+    background-color: $negro;
+    color:$blanco;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: $shadow;
+    text-align: center;
+    z-index: 10;
+}
+.container{
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    .container_contacto{
+        width: 313px;
+        background-color: $blanco;
+        box-shadow: $shadow;
+        border-radius: 20px;
+        display: flex;
+        justify-content:  center;
+        @include tablet{
+             width: 613px;
+        }
+        h3{
+            font-family: $MartelSans;
+            margin-top: 23px;
+            text-align: center;
+            margin-bottom: 23px;
+            color: $rosa;
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 25px;
+            @include tablet{
+                font-family: $MartelSans;
+                font-weight: 300;
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+        p{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: $MartelSans;
+            font-style: normal;
+            font-weight: 200;
+            font-size: 13px;
+            line-height: 12px;
+
+            @include tablet{
+                font-family: $MartelSans;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 21px;
+            }
+
+            .error{
+                border: 2px solid red  !important;
+            }
+
+            span{
+                width: 30%;
+                padding-right: 20px;
+            }
+    
+            input{
+                border-radius: 10px;
+                height: 26.09px;
+                width: 171.56px;
+                border: 1px solid $gris;
+                padding: 10px;
+                outline: none;
+                @include tablet{
+                    width: 336px;
+                    height: 38px;
+                }
+            }
+            input[type=number]::-webkit-inner-spin-button, 
+            input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+            }
+            select{
+                width: 50%;
+                border-radius: 10px;
+                height: 26.09px;
+                width: 100px ;
+                margin-right: 71.56px;
+                border: 1px solid $gris;
+                outline: none;
+                @include tablet{
+                    width: 236px;
+                    height: 38px;
+                    margin-right: 100px;
+                }
+            }
+            button{
+                width: 78.8px;
+                height: 21px;
+                box-shadow: $shadow;
+                border-radius: 10px;
+                background-color: $rosa;
+                color:$blanco;
+                border: none;
+                margin-top: 21px;
+                margin-bottom: 15px;
+                cursor: pointer;
+                @include tablet{
+                    width: 126px;
+                    height: 31px;
+                    font-family: $MartelSans;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+        }
+       
+    }
+}

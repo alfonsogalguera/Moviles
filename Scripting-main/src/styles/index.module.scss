@@ -1,0 +1,15 @@
+.img{
+    animation-name: example;
+    animation-duration: 4s;
+}
+
+.img1{
+    animation-name: example;
+    animation-duration: 4s;
+    animation-direction: reverse;
+}
+
+@keyframes example {
+    from {opacity: 1;}
+    to {opacity: 0;}
+  }

@@ -1,0 +1,71 @@
+
+@font-face {
+  font-family: Poppins;
+  src: url(../../public/Fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: Martel Sans;
+  src: url(../../public/Fonts/MartelSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url(../../public/Fonts/Roboto-Regular.ttf);
+}
+
+$roboto:'Roboto';
+$MartelSans:'Poppins';
+
+//colors
+$blanco: #FFFFFF;
+$azul: #0E4FC1;
+$azul1:#2F8CFA;
+$azulclaro:#DAEBF6;
+$rosa:  #E6245E;
+$gris: #7C7C7C;
+$negro: #000;
+$gris1:#C5C3C6;
+$verde: #1985A1;
+//sobras
+
+$shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inician mixins */
+
+$mobileMinusHeight: 699px;
+$mobileMinusWidth: 330px;
+$tablet: 768px;
+$laptop: 1152px;
+$desktop: 1440px;
+$desktopExtra: 1455px;
+
+@mixin mobileMinus {
+  @media (max-height: #{$mobileMinusHeight}) and (max-width: #{$mobileMinusWidth}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: #{$tablet}) {
+    @content;
+  }
+}
+
+@mixin laptop {
+  @media (min-width: #{$laptop}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
+
+@mixin desktopExtra {
+  @media (min-width: #{$desktopExtra}) {
+    @content;
+  }
+}
